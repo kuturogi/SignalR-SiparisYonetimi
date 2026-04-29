@@ -39,8 +39,3 @@ Rezervasyon oluşturabilir ve Bize ulaşın alanı ile mesaj yollayabilir, Signa
 - ♦️ Ajax ile hızlı ve etkileşimli kullanıcı deneyimi(sepete ürün eklerken,admine mesaj yollarken kullanıldı.)✅
 - ♦️ Basket ve Rezervasyon İşlemleri✅
 - ♦️ Mail Gönderme İşlemleri bulunmaktadır.✅
-
- 
-   ![Dashboard](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/QRCode.jpeg)
-# Admin Masa Durumu
-   ![Proje](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/MasaDurumu.jpeg)

@@ -16,7 +16,7 @@ namespace WebUI.ViewComponents.DefaultComponents
         {
             var client = _httpClientFactory.CreateClient();
             
-            var responseMessage = await client.GetAsync("https://localhost:7291/api/Discount/GetListByStatusTrue");
+            var responseMessage = await client.GetAsync("http://localhost:5006/api/Discount/GetListByStatusTrue");
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
             var values = JsonConvert.DeserializeObject<List<ResultDiscountDto>>(jsonData);
             return View(values);

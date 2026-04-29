@@ -11,7 +11,7 @@ namespace Persistence.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
-                name: "Features",
+                name: "MenuTables",
                 columns: table => new
                 {
                     MenuTableID = table.Column<int>(type: "int", nullable: false)

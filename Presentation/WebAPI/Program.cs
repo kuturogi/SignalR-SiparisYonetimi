@@ -5,7 +5,7 @@ using WebAPI.Hubs;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//apinýn bizim istediðimiz sýnýrlar içerisinde dýþarýya açýlmasýný saðlayan yöntem
+//apinï¿½n bizim istediï¿½imiz sï¿½nï¿½rlar iï¿½erisinde dï¿½ï¿½arï¿½ya aï¿½ï¿½lmasï¿½nï¿½ saï¿½layan yï¿½ntem
 builder.Services.AddCors(opt =>
 {
 	opt.AddPolicy("CorsPolicy", builder =>
@@ -37,8 +37,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseCors("CorsPolicy");
-
-app.UseHttpsRedirection();
 
 app.UseAuthorization();
 

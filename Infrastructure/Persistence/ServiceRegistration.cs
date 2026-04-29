@@ -15,10 +15,10 @@ namespace Persistence
         {
 
 			
-			//services.AddDbContext<SignalRContext>(opt =>
-			//{
-			//    opt.UseSqlServer(configuration.GetConnectionString("Local"));
-			//});
+			services.AddDbContext<SignalRContext>(opt =>
+			{
+			    opt.UseSqlServer(configuration.GetConnectionString("Local"));
+			});
 
 			services.AddScoped<IAboutRepository, AboutRepository>();
             services.AddScoped<IBookingRepository, BookingRepository>();

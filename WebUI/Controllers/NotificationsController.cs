@@ -15,7 +15,7 @@ namespace WebUI.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7291/api/Notification");
+            var responseMessage = await client.GetAsync("http://localhost:5006/api/Notification");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -36,7 +36,7 @@ namespace WebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(createNotificationDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PostAsync("https://localhost:7291/api/Notification", stringContent);
+            var responseMessage = await client.PostAsync("http://localhost:5006/api/Notification", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -46,7 +46,7 @@ namespace WebUI.Controllers
         public async Task<IActionResult> DeleteNotification(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.DeleteAsync($"https://localhost:7291/api/Notification/{id}");
+            var responseMessage = await client.DeleteAsync($"http://localhost:5006/api/Notification/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -57,7 +57,7 @@ namespace WebUI.Controllers
         public async Task<IActionResult> UpdateNotification(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync($"https://localhost:7291/api/Notification/{id}");
+            var responseMessage = await client.GetAsync($"http://localhost:5006/api/Notification/{id}");
             if (responseMessage.IsSuccessStatusCode)
             {
                 var jsonData = await responseMessage.Content.ReadAsStringAsync();
@@ -72,7 +72,7 @@ namespace WebUI.Controllers
             var client = _httpClientFactory.CreateClient();
             var jsonData = JsonConvert.SerializeObject(updateNotificationDto);
             StringContent stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
-            var responseMessage = await client.PutAsync("https://localhost:7291/api/Notification/", stringContent);
+            var responseMessage = await client.PutAsync("http://localhost:5006/api/Notification/", stringContent);
             if (responseMessage.IsSuccessStatusCode)
             {
                 return RedirectToAction("Index");
@@ -83,14 +83,14 @@ namespace WebUI.Controllers
         public async Task<IActionResult> NotificationStatusChangeToTrue(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            await client.GetAsync($"https://localhost:7291/api/Notification/NotificationStatusChangeToTrue/{id}");
+            await client.GetAsync($"http://localhost:5006/api/Notification/NotificationStatusChangeToTrue/{id}");
             return RedirectToAction("Index");
         }
 
         public async Task<IActionResult> NotificationStatusChangeToFalse(int id)
         {
             var client = _httpClientFactory.CreateClient();
-            await client.GetAsync($"https://localhost:7291/api/Notification/NotificationStatusChangeToFalse/{id}");
+            await client.GetAsync($"http://localhost:5006/api/Notification/NotificationStatusChangeToFalse/{id}");
             return RedirectToAction("Index");
         }
     }

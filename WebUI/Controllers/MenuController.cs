@@ -18,7 +18,7 @@ namespace WebUI.Controllers
         public async Task<IActionResult> Index()
         {
             var client = _httpClientFactory.CreateClient();
-            var responseMessage = await client.GetAsync("https://localhost:7291/api/Product");
+            var responseMessage = await client.GetAsync("http://localhost:5006/api/Product");
             var jsonData = await responseMessage.Content.ReadAsStringAsync();
             var values = JsonConvert.DeserializeObject<List<ResultProductDto>>(jsonData);
             return View(values);
@@ -37,7 +37,7 @@ namespace WebUI.Controllers
                 var stringContent = new StringContent(jsonData, Encoding.UTF8, "application/json");
 
                 // API'ye POST isteği gönderilir
-                var responseMessage = await client.PostAsync("https://localhost:7291/api/Basket", stringContent);
+                var responseMessage = await client.PostAsync("http://localhost:5006/api/Basket", stringContent);
 
                 // İsteğin başarılı olup olmadığı kontrol edilir
                 if (responseMessage.IsSuccessStatusCode)

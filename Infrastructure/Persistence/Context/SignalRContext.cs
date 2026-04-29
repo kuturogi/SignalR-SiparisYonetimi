@@ -12,14 +12,11 @@ namespace Persistence.Context
 {
     public class SignalRContext:IdentityDbContext<AppUser,AppRole,int>
     {
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        public SignalRContext(DbContextOptions<SignalRContext> options) : base(options)
         {
-            optionsBuilder.UseSqlServer("server=DESKTOP-493DFJA\\SQLEXPRESS; database=DbSignalRSiparis;integrated security=true;TrustServerCertificate=true;");
         }
-        //public SignalRContext(DbContextOptions<SignalRContext> options) : base(options)
-        // {
 
-        // }
+        public SignalRContext() { }
         public DbSet<About> Abouts { get; set; }
         public DbSet<Booking> Bookings { get; set; }
         public DbSet<Category> Categories { get; set; }

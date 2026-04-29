@@ -1,7 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using QRCoder;
-using System.Drawing;
-using System.Drawing.Imaging;
 
 namespace WebUI.Controllers
 {
@@ -16,16 +14,11 @@ namespace WebUI.Controllers
         [HttpPost]
         public IActionResult Index(string value)
         {
-            using (MemoryStream memoryStream = new MemoryStream())
-            {
-                QRCodeGenerator createQRCode = new QRCodeGenerator();
-                QRCodeGenerator.QRCode squareCode = createQRCode.CreateQrCode(value, QRCodeGenerator.ECCLevel.Q);
-                using (Bitmap image = squareCode.GetGraphic(10))
-                {
-                    image.Save(memoryStream, ImageFormat.Png);
-                    ViewBag.QrCodeImage="data:image/png;base64,"+Convert.ToBase64String(memoryStream.ToArray()); 
-                }
-            }
+            QRCodeGenerator generator = new QRCodeGenerator();
+            QRCodeData qrCodeData = generator.CreateQrCode(value, QRCodeGenerator.ECCLevel.Q);
+            PngByteQRCode qrCode = new PngByteQRCode(qrCodeData);
+            byte[] qrCodeBytes = qrCode.GetGraphic(10);
+            ViewBag.QrCodeImage = "data:image/png;base64," + Convert.ToBase64String(qrCodeBytes);
             return View();
         }
     }

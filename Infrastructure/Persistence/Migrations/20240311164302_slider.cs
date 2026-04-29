@@ -13,7 +13,7 @@ namespace Persistence.Migrations
             
 
             migrationBuilder.CreateTable(
-                name: "SocialMedias",
+                name: "Sliders",
                 columns: table => new
                 {
                     SliderID = table.Column<int>(type: "int", nullable: false)
@@ -38,7 +38,7 @@ namespace Persistence.Migrations
                 name: "MenuTables");
 
             migrationBuilder.DropTable(
-                name: "SocialMedias");
+                name: "Sliders");
 
             migrationBuilder.AddColumn<int>(
                 name: "MenuTableID",

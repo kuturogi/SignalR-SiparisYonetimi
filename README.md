@@ -40,40 +40,7 @@ Rezervasyon oluşturabilir ve Bize ulaşın alanı ile mesaj yollayabilir, Signa
 - ♦️ Basket ve Rezervasyon İşlemleri✅
 - ♦️ Mail Gönderme İşlemleri bulunmaktadır.✅
 
-  # Veriabanı
-   ![Veriabanı](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/veri%20taban%C4%B1.png)
-  # Default
-   ![Portfolio](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Default.jpeg)
-   # Menu
-   ![Dashboard](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Menu.jpeg)
-  # sipariş
-   ![Proje](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Sipari%C5%9F.jpeg)
-  # Mesaj
-   ![Proje](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Mesaj.jpeg)
-  
-   # Rezervasyon
-   ![Proje](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Rezervasyon.jpeg)
-  
-  
-  # Admin&Kullanıcı Giriş
-   ![İstatislikler](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Login.jpeg)
-  # Admin ayar
-   ![İstatislikler](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Ayarlar.jpeg)
-  # Admin İstatislik
-   ![Kategori Listesi](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/%C4%B0statislik.jpeg)
-   # Admin Mail
-   ![İstatislikler](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Mail2.jpeg)
-  # Admin Mails
-   ![Kategori Listesi](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Mail.png)
-   # Admin indirimler
-   ![İstatislikler](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/%C4%B0ndirimler.jpeg)
-  # Admin İstatislik
-   ![Kategori Listesi](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/Progresbar.jpeg)
-   # Admin bildirim
-   ![İstatislikler](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/bildirimler.jpeg)
-  # Admin bildirims
-   ![Kategori Listesi](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/bildirimnavbar.jpeg)
- # Admin QRCode
+ 
    ![Dashboard](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/QRCode.jpeg)
 # Admin Masa Durumu
    ![Proje](https://github.com/busenurdmb/SignalR_Siparisyonetimi/blob/master/WebUI/wwwroot/img/MasaDurumu.jpeg)
